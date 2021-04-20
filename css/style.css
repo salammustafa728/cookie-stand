@@ -2,11 +2,51 @@
 
 body{
     font-family: 'Zen Dots', cursive;
-
+    background-color: #dbf6e9;
 }
 
+header{
+    background-color: #ffc93c;
+}
+header{
+     height: 90px;
+
+}
+.src_nav_img{
+position: relative;
+left: 60px;
+bottom: 35px;
+}
+header a{
+    margin-left: 100px; 
+    text-decoration: none;
+    color: cornsilk;
+    padding: auto;
+}
+a:hover{
+ background-color: coral;
+}
+.img_sal{
+    padding-left: 30px;
+    width: 80px;
+    height: 80px;
+    display: block;
+
+}
+.imf_fam{
+    position: relative;
+    margin-left: 210px;
+}
+.main_sec{
+    display: block;
+    align-items: center;
+}
+.h1_cla{
+    text-align: center;
+}
 h1{
-    color: blue;
+    align-items: center;
+    color: #b67162;
 }
 h2{
     color: blue;
@@ -16,4 +56,16 @@ td,th{
 }
 td{
     padding: 5px;
+}
+p{
+    color: #b67162;
+    font-weight: 800px;
+}
+.main_SEC{
+    margin-left: 50px;
+}
+
+footer{
+    height: 60px;
+    background-color: #31326f;
 }
