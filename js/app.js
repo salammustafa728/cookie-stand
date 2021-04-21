@@ -3,8 +3,8 @@
 
 let hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
-const parentElement = document.getElementById('tableCookie');
 let CookieTable = document.getElementById('CookieTable');
+let cookiForm = document.getElementById('cookiForm');
 
 function Cookie(name, mincust, maxcust, avgCus) {
   this.name = name;
@@ -94,21 +94,17 @@ function footers() {
   tfoot.appendChild(th1Ele);
   th1Ele.textContent = totalOfTotals;
 }
-
+// let test =0;
 new Cookie('Seattle', '23', '65', '6.3');
 new Cookie('Tokyo', '3', '24', '1.2');
 new Cookie('Dubai', '11	', '38', '3.7');
 new Cookie('Paris', '20', '38', '2.3');
 new Cookie('Lima', '2', '16', '4.6');
 
-function render() {
-  for(let i = 0; i < Cookie.allCity.length; i++){
-    Cookie.allCity[i].render();
-  }
-}
+
 
 heading();
-render();
+
 
 function getRandomValue(min, max) {
   min = Math.ceil(min);
@@ -119,5 +115,38 @@ function getRandomValue(min, max) {
 console.log(Cookie.allCity);
 
 
+
+
+cookiForm.addEventListener('submit',eventSave);
+
+function eventSave(event){
+  event.preventDefault();
+  const locName = event.target.Lname.value;
+  const minCus = event.target.miCus.value;
+  const maxCus = event.target.maxCus.value;
+  const avgCUs = event.target.AvgCook.value;
+
+  let newLocation = new Cookie(locName,minCus,maxCus,avgCUs);
+  let rowsTable = CookieTable.rows.length;
+  CookieTable.deleteRow(rowsTable-1);
+  newLocation.gitCustNumber();
+  newLocation.cookiesPerHour;
+  newLocation.render();
+  footers();
+  console.log(locName,minCus,maxCus,avgCUs);
+  console.log(event);
+
+}
+
+function render() {
+  for(let i = 0; i < Cookie.allCity.length; i++){
+    Cookie.allCity[i].render();
+  }
+}
+
+
+
+render();
 footers();
+
 
