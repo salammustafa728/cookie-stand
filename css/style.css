@@ -20,7 +20,7 @@ bottom: 35px;
 header a{
     margin-left: 100px; 
     text-decoration: none;
-    color: cornsilk;
+    color: #9a8c98;
     padding: auto;
 }
 a:hover{
@@ -37,6 +37,7 @@ a:hover{
     position: relative;
     margin-left: 210px;
 }
+
 .main_sec{
     display: block;
     align-items: center;
@@ -53,9 +54,14 @@ h2{
 }
 td,th{
     border: 1px solid blue;
+    border-radius: 10%;
+}
+th{
+    background-color: #f08080;
 }
 td{
     padding: 5px;
+    background-color: #fbc4ab;
 }
 p{
     color: #b67162;
@@ -65,7 +71,42 @@ p{
     margin-left: 50px;
 }
 
+
 footer{
     height: 60px;
     background-color: #31326f;
+}
+.art_form{
+    position: relative;
+    left: 10px;
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    padding-top: 10px;
+   background-color: #ffddd2;
+   margin-bottom: 20px;
+   border-radius: 7%;
+}
+fieldset{
+border: none;
+padding: 20px 30px;
+margin:20px 30px;
+}
+legend{
+    margin-top: 15px;
+}
+label{
+    margin-top: 10px;
+}
+button{
+ border-radius: 10%;
+ background-color: #ddbea9;
+ transition: 350ms;
+}
+button:hover{
+    background-color: #f4978e;
+}
+table{
+    border-radius: 7%;
+    border: #8a817c;
 }
