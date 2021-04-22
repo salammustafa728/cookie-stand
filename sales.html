@@ -8,28 +8,29 @@
     <link rel="stylesheet"  href="./css/style.css">
 </head>
 
-<nav>
-    <a href="index.html">Home</a>
+<nav class="nav_sales">
+    <a class="nav_a" href="index.html">Home</a>
 
 </nav>
 <body id="bodySalAttributes">
 
 <h2 id="wlecomMsg"></h1>
     <article class="art_form">
-    <form id="cookiForm">
+    <form id="cookiForm">Add a New City
 <fieldset>
 <legend>
-<label for="Lname">Location Name</label>
-<input id="Lname" name="Lname" type="text"><br><br>
+    
+<label  for="Lname">Location Name</label>
+<input required id="Lname" name="Lname" type="text"><br><br>
 
 <label for="miCus">Minimum Customer</label>
-<input id="miCus" name="miCus" type="number"><br><br>
+<input required id="miCus" name="miCus" type="number" min="0"><br><br>
 
 <label for="maxCus">Maximum Customer</label>
-<input id="maxCus" name="maxCus" type="number"><br><br>
+<input required id="maxCus" name="maxCus" type="number" min="0"><br><br>
 
 <label for="AvgCook">Avarage Cookie</label>
-<input id="AvgCook" name="AvgCook" type="text"><br><br>
+<input required id="AvgCook" name="AvgCook" type="number" min="0"><br><br>
 
 <button type="submit"> Save </button><br><br>
 
@@ -44,7 +45,7 @@
 
 
     </article>
-
+<footer class="foot_sales"></footer>
 
 
 <script src="./js/app.js"></script>

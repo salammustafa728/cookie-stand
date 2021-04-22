@@ -129,7 +129,6 @@ function eventSave(event){
   let newLocation = new Cookie(locName,minCus,maxCus,avgCUs);
   let rowsTable = CookieTable.rows.length;
   CookieTable.deleteRow(rowsTable-1);
-  newLocation.gitCustNumber();
   newLocation.cookiesPerHour;
   newLocation.render();
   footers();
